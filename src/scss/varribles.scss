@@ -1,0 +1,9 @@
+$color:#251a25;
+$white:#ffffff;
+$theme:#d472a0;
+
+%theme-gradient {
+    background-image: linear-gradient(90deg, rgb(150, 147, 252) 0%, rgb(170, 152, 246) 12%, rgb(190, 156, 240) 28%, rgb(220, 179, 249) 60%, rgb(236, 165, 250) 76%, rgb(252, 151, 250) 100%);
+    opacity: 0.831;
+
+}

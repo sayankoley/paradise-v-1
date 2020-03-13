@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+
+$color:#251a25;
+
+@font-face {
+    font-family: 'Conv_glyphicons-halflings-regular';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: local('☺'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Adora Chalie';
+    src: url('../fonts/Adora Chalie.eot');
+    src: local('☺'), url('../fonts/Adora Chalie.woff') format('woff'), url('../fonts/Adora Chalie.ttf') format('truetype'), url('../fonts/Adora Chalie.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: local('☺'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$body:'Conv_Montserrat-Regular',
+Sans-Serif;
+$banner: 'Conv_Adora Chalie',
+Sans-Serif;
+$icons:'Conv_glyphicons-halflings-regular',
+Sans-Serif;
+
+.icons {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    font-family: $icons;
+    font-size: 18px;
+
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.icons-search:before {
+    content: "\E003";
+    color: $color;
+}

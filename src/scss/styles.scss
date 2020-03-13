@@ -1,0 +1,158 @@
+@import "varribles";
+@import "fonts";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header-top {
+    @extend %theme-gradient;
+    height: 60px;
+    font-family: $body;
+
+    .header-info {
+        color: $white;
+
+        ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                margin-right: 15px;
+
+                i {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    .header-top-social {
+        span {
+            color: $white;
+            border-right: 1px solid $white;
+            padding-right: 20px;
+        }
+
+        ul {
+            list-style: none;
+            display: inline-block;
+
+            li {
+                // text-align: right;
+                display: inline-block;
+                margin-left: 8px;
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+
+                    i {
+                        color: $white;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-area {
+    font-family: $body;
+    height: 100px;
+    // position: sticky;
+
+    .header-logo {
+        a {
+            text-decoration: none;
+
+            img {
+                width: 180px;
+                height: 38px;
+            }
+        }
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            text-align: right;
+
+            li {
+                display: inline-block;
+
+                a {
+                    color: $color;
+                    margin-right: 35px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: $theme;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-right {
+        justify-content: space-around;
+        display: flex;
+
+        .ss {
+            font-size: 18px;
+            color: $color;
+        }
+    }
+}
+
+.carousel-inner {
+    position: relative !important;
+    z-index: 1;
+
+
+    img {
+        height: 1000px;
+        width: 100% !important;
+    }
+
+    .carousel-caption {
+        position: absolute !important;
+        top: 35% !important;
+        left: 2% !important;
+        text-align: left;
+    }
+
+    h5 {
+        font-size: 75px;
+        font-family: 'Conv_Adora Chalie';
+        color: $color;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-family: $body;
+        color: $color;
+    }
+
+    button {
+        @extend%theme-gradient;
+        color: $white;
+        text-align: center;
+        font-size: 27px;
+        width: 406px;
+        height: 60px;
+        border-radius: 500px;
+        border: none;
+
+        a {
+            text-decoration: none;
+            color: $white;
+
+        }
+    }
+
+}
